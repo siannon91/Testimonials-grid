@@ -58,13 +58,14 @@ h2 {
 #primo {
     background-color: hsl(263, 55%, 52%);
     grid-column: span 2;
-    /* width: 525px; */
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    
 }
 
 #secondo {
     background-color: hsl(217, 19%, 35%);
     grid-column: span 1;
-    /* width: 250px; */
 }
 
 #terzo, #quarto {
@@ -74,21 +75,29 @@ h2 {
 
 #quarto {
     grid-column: 1;
-    /* width: 245px; */
 }
 
 #terzo {
     grid-column: 4;
     grid-row: span 2;
-    /* width: 255px; */
 }
 
 #quinto {
-
     background-color: hsl(219, 29%, 14%);
     grid-column: span 2;
-    /* width: 530px; */
-
 }
 
-/*  
+
+
+
+
+@media (max-width: 900px) {
+    .testimonianze {
+        grid-template-columns: 1fr;
+    }
+
+    #primo, #secondo, #terzo, #quarto, #quinto {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
