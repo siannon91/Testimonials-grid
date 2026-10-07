@@ -60,7 +60,7 @@ h2 {
     grid-column: span 2;
     background-image: url(./images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
-    
+    background-position: top 0 right 80px;
 }
 
 #secondo {
@@ -88,7 +88,9 @@ h2 {
 }
 
 
-
+footer {
+    padding-top: 40px;
+}
 
 
 @media (max-width: 900px) {
